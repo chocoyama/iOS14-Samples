@@ -13,6 +13,13 @@
 		6BE3F3C224A2211A00109B5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE3F3C124A2211A00109B5D /* Preview Assets.xcassets */; };
 		6BE3F3CD24A2211A00109B5D /* iOS14SamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3CC24A2211A00109B5D /* iOS14SamplesTests.swift */; };
 		6BE3F3D824A2211B00109B5D /* iOS14SamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3D724A2211B00109B5D /* iOS14SamplesUITests.swift */; };
+		6BE3F3E924A22D1B00109B5D /* CollectionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3E724A22D1B00109B5D /* CollectionListViewController.swift */; };
+		6BE3F3EA24A22D1B00109B5D /* CollectionListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE3F3E824A22D1B00109B5D /* CollectionListViewController.xib */; };
+		6BE3F3F224A2343000109B5D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3F124A2343000109B5D /* GridView.swift */; };
+		6BE3F3F424A23A0900109B5D /* TextEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3F324A23A0900109B5D /* TextEditView.swift */; };
+		6BE3F3F624A23B4300109B5D /* ProgressSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3F524A23B4300109B5D /* ProgressSampleView.swift */; };
+		6BE3F3F824A23EF600109B5D /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3F724A23EF600109B5D /* FullScreenView.swift */; };
+		6BE3F3FA24A5B14200109B5D /* PickerSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3F3F924A5B14200109B5D /* PickerSampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		6BE3F3D324A2211B00109B5D /* iOS14SamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS14SamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE3F3D724A2211B00109B5D /* iOS14SamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS14SamplesUITests.swift; sourceTree = "<group>"; };
 		6BE3F3D924A2211B00109B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE3F3E724A22D1B00109B5D /* CollectionListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionListViewController.swift; sourceTree = "<group>"; };
+		6BE3F3E824A22D1B00109B5D /* CollectionListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionListViewController.xib; sourceTree = "<group>"; };
+		6BE3F3F124A2343000109B5D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		6BE3F3F324A23A0900109B5D /* TextEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditView.swift; sourceTree = "<group>"; };
+		6BE3F3F524A23B4300109B5D /* ProgressSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSampleView.swift; sourceTree = "<group>"; };
+		6BE3F3F724A23EF600109B5D /* FullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
+		6BE3F3F924A5B14200109B5D /* PickerSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,13 @@
 				6BE3F3BE24A2211A00109B5D /* Assets.xcassets */,
 				6BE3F3C324A2211A00109B5D /* Info.plist */,
 				6BE3F3C024A2211A00109B5D /* Preview Content */,
+				6BE3F3E724A22D1B00109B5D /* CollectionListViewController.swift */,
+				6BE3F3E824A22D1B00109B5D /* CollectionListViewController.xib */,
+				6BE3F3F124A2343000109B5D /* GridView.swift */,
+				6BE3F3F324A23A0900109B5D /* TextEditView.swift */,
+				6BE3F3F524A23B4300109B5D /* ProgressSampleView.swift */,
+				6BE3F3F724A23EF600109B5D /* FullScreenView.swift */,
+				6BE3F3F924A5B14200109B5D /* PickerSampleView.swift */,
 			);
 			path = iOS14Samples;
 			sourceTree = "<group>";
@@ -234,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BE3F3C224A2211A00109B5D /* Preview Assets.xcassets in Resources */,
+				6BE3F3EA24A22D1B00109B5D /* CollectionListViewController.xib in Resources */,
 				6BE3F3BF24A2211A00109B5D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +281,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE3F3E924A22D1B00109B5D /* CollectionListViewController.swift in Sources */,
 				6BE3F3BD24A2211A00109B5D /* ContentView.swift in Sources */,
+				6BE3F3F224A2343000109B5D /* GridView.swift in Sources */,
+				6BE3F3F624A23B4300109B5D /* ProgressSampleView.swift in Sources */,
+				6BE3F3FA24A5B14200109B5D /* PickerSampleView.swift in Sources */,
+				6BE3F3F824A23EF600109B5D /* FullScreenView.swift in Sources */,
 				6BE3F3BB24A2211A00109B5D /* iOS14SamplesApp.swift in Sources */,
+				6BE3F3F424A23A0900109B5D /* TextEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
