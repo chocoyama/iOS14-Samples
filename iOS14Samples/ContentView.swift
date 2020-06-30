@@ -10,23 +10,31 @@ import SwiftUI
 struct ContentView: View {
     struct Feature {
         enum SwiftUI: String, CaseIterable, Identifiable {
-            case gridView = "GridView"
+            case gridView
+            case textEditView
+            case progressView
+            case link
+            case label
             
-            var title: String { rawValue }
+            var title: String { .upperCamel(fromLowerCamel: rawValue) }
             var id: String { rawValue }
             var destination: some View {
                 Group {
                     switch self {
                     case .gridView: GridView()
+                    case .textEditView: TextEditView()
+                    case .progressView: ProgressSampleView()
+                    case .link: LinkView()
+                    case .label: LabelView()
                     }
                 }.navigationTitle(title)
             }
         }
         
         enum UIKit: String, CaseIterable, Identifiable {
-            case collectionListView = "ColelctionListView"
+            case collectionListView
             
-            var title: String { rawValue }
+            var title: String { .upperCamel(fromLowerCamel: rawValue) }
             var id: String { rawValue }
             var destination: some View {
                 Group {
@@ -42,14 +50,14 @@ struct ContentView: View {
         NavigationView {
             List {
                 DisclosureGroup("SwiftUI") {
-                    List(Feature.SwiftUI.allCases) { feature in
+                    ForEach(Feature.SwiftUI.allCases) { feature in
                         NavigationLink(destination: feature.destination,
                                        label: { Text(feature.title) })
                     }
                 }
                 
                 DisclosureGroup("UIKit") {
-                    List(Feature.UIKit.allCases) { feature in
+                    ForEach(Feature.UIKit.allCases) { feature in
                         NavigationLink(destination: feature.destination,
                                        label: { Text(feature.title) })
                     }
@@ -62,5 +70,13 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+private extension String {
+    static func upperCamel(fromLowerCamel lowerCamel: String) -> String {
+        var rawStr = lowerCamel
+        let firstStr = rawStr.removeFirst()
+        return "\(firstStr.uppercased())\(rawStr)"
     }
 }

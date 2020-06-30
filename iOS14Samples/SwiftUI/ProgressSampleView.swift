@@ -12,11 +12,6 @@ struct ProgressSampleView: View {
         VStack(spacing: 64) {
             ProgressView("Circular")
             ProgressView("Linear", value: 0.5, total: 1.0)
-            Link("link", destination: URL(string: "https://www.yahoo.co.jp")!)
-            Label("Lightning", systemImage: "bolt.fill")
-                .labelStyle(TitleOnlyLabelStyle())
-            Label("Lightning", systemImage: "bolt.fill")
-                .labelStyle(IconOnlyLabelStyle())
         }
     }
 }
