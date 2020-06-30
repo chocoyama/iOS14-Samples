@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PickerSampleView: View {
+struct ColorPickerView: View {
     @State private var pickedColor: Color = .black
     
     var body: some View {
@@ -18,6 +18,6 @@ struct PickerSampleView: View {
 
 struct PickerSampleView_Previews: PreviewProvider {
     static var previews: some View {
-        PickerSampleView()
+        ColorPickerView()
     }
 }

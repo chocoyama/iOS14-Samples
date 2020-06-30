@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct FullScreenView: View {
+struct PresentFullScreenView: View {
     @State private var showingSheet = false
+    
     var body: some View {
         Button("Show") {
             self.showingSheet = true
@@ -20,6 +21,6 @@ struct FullScreenView: View {
 
 struct FullScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        FullScreenView()
+        PresentFullScreenView()
     }
 }

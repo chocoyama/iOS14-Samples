@@ -15,6 +15,8 @@ struct ContentView: View {
             case progressView
             case link
             case label
+            case fullScreenCover
+            case colorPicker
             
             var title: String { .upperCamel(fromLowerCamel: rawValue) }
             var id: String { rawValue }
@@ -26,6 +28,8 @@ struct ContentView: View {
                     case .progressView: ProgressSampleView()
                     case .link: LinkView()
                     case .label: LabelView()
+                    case .fullScreenCover: PresentFullScreenView()
+                    case .colorPicker: ColorPickerView()
                     }
                 }.navigationTitle(title)
             }
